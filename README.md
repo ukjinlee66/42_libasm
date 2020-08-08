@@ -1,7 +1,7 @@
 # 42_libasm<br>
 어셈블러언어는 컴퓨터 또는 기타 프로그래밍 가능한 장치를 위한 저수준 프로그래밍 언어입니다.<br>
 Assembler Language is a low-level programming language for computers or other programmable devices.<br>
-이번 프로젝트는 목적은 기본적으로 어셈블리어를 이용하여 여러 함수를 구현해야합니다.<br>
+이번 프로젝트의 목적은 기본적으로 어셈블리어를 이용하여 여러 함수를 구현해야합니다.<br>
 The purpose of this project is basically to implement several functions using assembly language.<br>
 <img src = "assembly.jpg" width="600"><br><br>
 **일반적으로 프로그램이 생성 및 실행되는 과정**<br>
