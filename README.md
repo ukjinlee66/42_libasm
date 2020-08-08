@@ -3,7 +3,7 @@
 Assembler Language is a low-level programming language for computers or other programmable devices.<br>
 이번 프로젝트는 목적은 기본적으로 어셈블리어를 이용하여 여러 함수를 구현해야합니다.<br>
 The purpose of this project is basically to implement several functions using assembly language.<br>
-<img src = "./assem.bly1.jpg" width="70"><br><br>
+<img src = "assembly.jpg" width="600"><br><br>
 **일반적으로 프로그램이 생성 및 실행되는 과정**<br>
 **Typically the process by which a program is created and excuted**<br>
 1. 프로그래머가 C, C++ 등의 언어로 프로그래밍을 하면 해당 언어의 컴파일러가 어셈블리 코드로 프로그램 코드를 변환합니다.<br>
