@@ -1,17 +1,9 @@
-#include <stdio.h>
-
-void in(int *a)
+int ft_strlen(char *str)
 {
-	while (*a < 3)
-		(*a)++;
-	return;
-}
+	int		i;
 
-int main(void)
-{
-	int a = 0;
-
-	in(&a);
-	printf("%d",a);
-	return (a);
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }
