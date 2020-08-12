@@ -12,6 +12,37 @@ _ft_strcmp :
 		mov		rcx, [rbp - 24]
 		mov		rdx, [rbp - 16]
 loop :
-		cmp		byte [rax + rcx], 0
-		jmp		test
+		cmp		byte [rbx + rcx], 0
+		je		retu
+
+		cmp		byte [rdx + rcx], 0
+		je		retu
 		
+		mov		al, byte [rdx + rcx]
+		cmp		byte [rbx + rcx], al
+		jne		retu
+		add		rcx, 1
+		jmp		loop
+
+retu :
+		mov		ah, byte [rdx + rcx]
+		cmp		[rbx + rcx], ah
+		ja		retu1
+		jb		retu2
+		je		retu3
+
+retu1 :
+		mov eax, 1
+		mov rsp, rbp
+		pop rbp
+		ret
+retu2 :
+		mov eax, -1
+		mov rsp, rbp
+		pop rbp
+		ret
+retu3 : 
+		mov eax, 0
+		mov rsp, rbp
+		pop rbp
+		ret

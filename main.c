@@ -1,11 +1,9 @@
 #include<stdio.h>
 
-char		*ft_strcpy(char *dest, const char *str);
+ssize_t		ft_write(int fildes, const void *buf, size_t nbytes);
 
 int main(void)
 {
-	char test[5];
-	ft_strcpy(test,"aaa");
-	printf("test: %s\n", test);
+	ft_write(1, "abcd\n", 6);
 	return (0);
 }
