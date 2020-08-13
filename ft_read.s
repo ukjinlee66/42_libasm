@@ -13,12 +13,13 @@ _ft_read :
 		je		size_error
 
 		mov		rax, 0x2000003
+		syscall
 		ret
 
 read_error :
 		mov		rax, -1
 		ret
 
-sizze_error :
+size_error :
 		mov		rax, 0
 		ret

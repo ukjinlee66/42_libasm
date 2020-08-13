@@ -1,9 +1,13 @@
 #include<stdio.h>
-
-ssize_t		ft_write(int fildes, const void *buf, size_t nbytes);
+#include <fcntl.h>
+#include<unistd.h>
+ssize_t		ft_read(int fildes, const void *buf, size_t nbytes);
 
 int main(void)
 {
-	ft_write(1, "abc", 4);
+	char buf[100];
+	int fd = open("./tex.text", O_RDONLY);
+	printf("%zd\n",ft_read(fd, buf, 7));
+	printf("buf : %s\n",buf);
 	return (0);
 }
