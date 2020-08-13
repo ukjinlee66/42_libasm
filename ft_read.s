@@ -1,26 +1,24 @@
-global _ft_write
+global _ft_read
 
 section .text
 
-_ft_write :
+_ft_read :
 		cmp		rdi, 0
-		je		write_error
+		je		read_error
 
 		cmp		rsi, 0
-		je		write_error
+		je		read_error
 
 		cmp		rdx, 0
 		je		size_error
 
-		mov		rax, 0x2000004
-		syscall
+		mov		rax, 0x2000003
 		ret
 
-write_error :
+read_error :
 		mov		rax, -1
 		ret
 
-size_error :
+sizze_error :
 		mov		rax, 0
 		ret
-
