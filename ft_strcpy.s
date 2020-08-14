@@ -1,7 +1,10 @@
 global _ft_strcpy
 
 section .text
-_ft_strcpy :
+_ft_strcpy :	
+		push	rbp
+		mov		rbp, rsp
+		sub		rsp, 32
 		
 		cmp		rdi, 0
 		je		test1
@@ -9,15 +12,12 @@ _ft_strcpy :
 		cmp		rsi, 0
 		je		test1
 
-		push	rbp
-		mov		rbp, rsp
-		sub		rsp, 32
-		mov		[rbp - 8], rdi
-		mov		[rbp - 16], rsi
+		mov		qword [rbp - 8], rdi
+		mov		qword [rbp - 16], rsi
 		mov		qword [rbp - 24], 0
-		mov		rax, [rbp - 8]
-		mov		rdx, [rbp - 16]
-		mov		rcx, [rbp - 24]
+		mov		rax, qword [rbp - 8]
+		mov		rdx, qword [rbp - 16]
+		mov		rcx, qword [rbp - 24]
 
 loop :
 		cmp		byte [rdx + rcx], 0

@@ -6,7 +6,7 @@
 #    By: youlee <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/08/13 19:12:02 by youlee            #+#    #+#              #
-#    Updated: 2020/08/13 20:25:14 by youlee           ###   ########.fr        #
+#    Updated: 2020/08/14 17:55:56 by youlee           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,13 +35,12 @@ all : $(NAME)
 
 $(NAME) : $(OBJS)
 		@ar rc $(NAME) $(OBJS)
-		$(CC) main.c -lasm -L .
-		./a.out
+		$(CC) main.c -lasm -L . -o libasm
 clean : 
 		@rm -rf $(OBJS)
 
 fclean : clean
-		@rm -rf $(NAME) a.out
+		@rm -rf $(NAME) libasm
 
 re : fclean all
 
