@@ -6,7 +6,7 @@
 /*   By: youlee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/13 20:08:08 by youlee            #+#    #+#             */
-/*   Updated: 2020/08/14 17:55:05 by youlee           ###   ########.fr       */
+/*   Updated: 2020/08/15 15:30:23 by youlee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,8 @@ int main(void)
 	printf("ft_strcpy : %s\n",ft_strcpy(str2, s));
 	printf("strcmp : %d\n",strcmp("ABCD","ABCC"));
 	printf("ft_strcmp : %d\n",ft_strcmp("ABCD","ABCC"));
-	write(1, "or_write : 42seoul\n", 19);
-	ft_write(1, "ft_write : 42seoul\n", 19);
+	write(1, "or_write : 42seoul\n", -19);
+	ft_write(1, "ft_write : 42seoul\n", -19);
 
 	int fd = open("./tex.text", O_RDONLY);
 	int fd2 = open("./tex2.text", O_RDONLY);

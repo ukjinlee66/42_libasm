@@ -26,5 +26,5 @@ error_handle :
 
 error_len :
 		mov		qword [rax], 0
-		mov		rax, -42
+		mov		rax, -1
 		ret
