@@ -1,3 +1,4 @@
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fukjinlee66%2F42_libasm&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 # 42_libasm<br>
 어셈블러언어는 컴퓨터 또는 기타 프로그래밍 가능한 장치를 위한 저수준 프로그래밍 언어입니다.<br>
 Assembler Language is a low-level programming language for computers or other programmable devices.<br>
